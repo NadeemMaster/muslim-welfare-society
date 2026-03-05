@@ -1809,6 +1809,52 @@ ul {
     font-size: 13px;
 }
 
+/* Developer Credit Styles */
+.dev-link {
+    color: var(--white);
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 5px;
+}
+
+.dev-link:hover {
+    color: var(--green-light);
+    text-shadow: 0 0 10px var(--green-glow);
+}
+
+.heartbeat {
+    color: #ff3e3e;
+    display: inline-block;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1.25);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    45% {
+        transform: scale(1.15);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+}
+
 /* === BACK TO TOP === */
 .back-to-top {
     position: fixed;
